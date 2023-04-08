@@ -1,0 +1,15 @@
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.csproj.AssemblyReference.cache
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.AssemblyInfoInputs.cache
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.AssemblyInfo.cs
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.csproj.CoreCompileInputs.cache
+D:\CSharpProjects\LoadingScreen\bin\Debug\net6.0\LoadingScreen.exe
+D:\CSharpProjects\LoadingScreen\bin\Debug\net6.0\LoadingScreen.deps.json
+D:\CSharpProjects\LoadingScreen\bin\Debug\net6.0\LoadingScreen.runtimeconfig.json
+D:\CSharpProjects\LoadingScreen\bin\Debug\net6.0\LoadingScreen.dll
+D:\CSharpProjects\LoadingScreen\bin\Debug\net6.0\LoadingScreen.pdb
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.dll
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\refint\LoadingScreen.dll
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.pdb
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\LoadingScreen.genruntimeconfig.cache
+D:\CSharpProjects\LoadingScreen\obj\Debug\net6.0\ref\LoadingScreen.dll
