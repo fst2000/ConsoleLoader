@@ -12,10 +12,10 @@ public class LoaderDisplayer
     public void Display()
     {
         string loadPercent = Convert.ToString(loader.LoadPercent()) + "%";
-        int loadedBarLength = loader.LoadPercent() / (100/length);
+        int loadedBarLength = Math.Max(loader.LoadPercent() / (100/length) - loadPercent.Length, 0);
         string loadedBar = new String('=', loadedBarLength);
-        string allBar = "[" + new String('-', length + loadPercent.Length) + "]";
+        string unloadedBar = new String('-',length - loadedBarLength - loadPercent.Length);
+        string allBar = "[" + loadedBar + loadPercent + unloadedBar +"]";
         printer.Print(allBar);
-        printer.Print("[" + loadedBar + loadPercent);
     }
 }
