@@ -1,11 +1,11 @@
 public class Loader
 {
-    StopWatch stopWatch;
+    ICounter counter;
     int duration;
-    public Loader(StopWatch stopWatch, int duration)
+    public Loader(ICounter counter, int duration)
     {
-        this.stopWatch = stopWatch;
+        this.counter = counter;
         this.duration = duration;
     }
-    public int LoadPercent() => Math.Min((int)(stopWatch.PassedTime() * (100d / duration)),100);
+    public int LoadPercent() => Math.Min((int)(counter.Current() * (100d / duration)),100);
 }

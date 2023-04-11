@@ -1,9 +1,9 @@
-public class StopWatch
+public class StopWatch : ICounter
 {
     DateTime startTime;
     public StopWatch()
     {
         startTime = DateTime.Now;
     }
-    public double PassedTime()=> (DateTime.Now - startTime).TotalSeconds;
+    public int Current()=> (int)(DateTime.Now - startTime).TotalSeconds;
 }

@@ -2,15 +2,19 @@
 {
     static void Main()
     {
-        int duration = 5;
-        StopWatch stopWatch = new StopWatch();
-        Loader loader = new Loader(stopWatch, duration);
+        int duration = 100;
+        int sleepTime = 100;
+        Event counterEvent = new Event();
+        ICounter arrayCounter = new Counter(counterEvent);
+        Loader loader = new Loader(arrayCounter, duration);
         ConsolePrinter printer = new ConsolePrinter();
         LoaderDisplayer loaderDisplayer = new LoaderDisplayer(loader, printer, 20);
-        while(true)
+        int[] array = new int[duration];
+        foreach(var a in array)
         {
+            counterEvent.Call();
             loaderDisplayer.Display();
-            Thread.Sleep(10);
+            Thread.Sleep(sleepTime);
         }
     }
 }
