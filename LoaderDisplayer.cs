@@ -1,18 +1,18 @@
-public class LoaderDisplayer
+public class LoaderDisplayer : IProgressConsumer
 {
-    Loader loader;
+
     ConsolePrinter printer;
     int length;
-    public LoaderDisplayer(Loader loader, ConsolePrinter printer, int length)
+    public LoaderDisplayer(ConsolePrinter printer, int length)
     {
-        this.loader = loader;
         this.printer = printer;
         this.length = length;
     }
-    public void Display()
+    public void Progress(int progress, int end)
     {
-        string loadPercent = Convert.ToString(loader.LoadPercent()) + "%";
-        int loadedBarLength = Math.Max(loader.LoadPercent() / (100/length) - loadPercent.Length, 0);
+        int percent = (int)(progress / (float)end * 100f);
+        string loadPercent = percent.ToString() + "%";
+        int loadedBarLength = Math.Max(percent / (100/length) - loadPercent.Length, 0);
         string loadedBar = new String('=', loadedBarLength);
         string unloadedBar = new String('-',length - loadedBarLength - loadPercent.Length);
         string allBar = "[" + loadedBar + loadPercent + unloadedBar +"]";

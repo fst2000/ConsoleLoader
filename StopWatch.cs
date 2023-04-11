@@ -1,4 +1,4 @@
-public class StopWatch : ICounter
+public class StopWatch
 {
     DateTime startTime;
     public StopWatch()
